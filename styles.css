@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+    border: 2px solid #66a6ff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border: 2px solid #333;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #66a6ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #4e86d4;
+    transform: translateY(-2px);
+}
+
+.geo-btn {
+    display: block;
+    margin: 10px auto;
+    background: #333;
+    border-radius: 5px;
+}
+
+.geo-btn:hover {
+    background: #555;
+}
+
+.weather-output {
+    margin-top: 20px;
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.weather-output:hover {
+    transform: scale(1.05);
+}
+
+.weather-output h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.weather-output p {
+    margin: 5px 0;
+    font-size: 15px;
+}

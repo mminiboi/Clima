@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Clima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-cloud-sun"></i> Aplicativo de Clima</h1>
+        <div class="input-container">
+            <input type="text" id="locationInput" placeholder="Digite a localização (ex: São Paulo)">
+            <button id="getWeatherBtn"><i class="fa-solid fa-search"></i> Obter Clima</button>
+        </div>
+        <button id="geoWeatherBtn" class="geo-btn"><i class="fa-solid fa-location-arrow"></i> Usar Minha Localização</button>
+        <div id="weatherOutput" class="weather-output"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
